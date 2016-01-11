@@ -1,0 +1,175 @@
+
+Value Iteration with terminal convergence takes 23 iterations:
+
+1.666344	-1.000000	1.812207	1.835864	1.909549	2.347859	
+2.071210	2.140510	2.210044	W		-1.000000	2.482797	
+2.139215	2.218016	2.297147	W		2.743907	3.000000	
+2.196962	2.290561	2.386548	W		2.797045	2.900008	
+2.131881	2.230620	2.479185	2.629347	2.713051	2.802884	
+1.000000	-1.000000	2.024988	W		-1.000000	-1.000000	
+
+↓	-1	↓	→	→	↓	
+→	↓	↓	W	-1	↓	
+→	→	↓	W	→	3	
+→	→	↓	W	→	↑	
+→	→	→	→	→	↑	
+1	-1	↑	W	-1	-1	
+
+
+Value Iteration with non terminal convergence takes 841 iterations:
+
+210.669805	213.574589	217.750685	220.939506	223.779774	226.410399	
+209.116346	211.841001	214.640169	W		225.743815	229.648559	
+207.293423	209.517072	211.650604	W		229.368771	233.086871	
+209.024955	211.693135	214.395603	W		226.822416	229.767160	
+210.929588	214.037508	217.491039	221.074163	223.916128	226.529720	
+209.681781	210.778487	214.295188	W		220.132771	222.202745	
+
+→	→	→	→	→	↓	
+→	→	↑	W	→	↓	
+→	↑	↑	W	→	→	
+→	→	↓	W	→	↑	
+→	→	→	→	↑	↑	
+↑	→	↑	W	↑	↑	
+
+
+Policy Iteration with terminal convergence takes 12 iterations:
+
+1.241718	-1.000000	1.769967	1.835856	1.909549	2.347858	
+1.635388	1.756881	1.833523	W		-1.000000	2.482797	
+1.754317	1.840349	1.918812	W		2.507044	3.000000	
+1.806819	1.897901	2.003788	W		2.727721	2.892391	
+1.730757	1.706439	2.092905	2.231917	2.310603	2.751968	
+1.000000	-1.000000	1.685434	W		-1.000000	-1.000000	
+
+↓	-1	→	→	→	↓	
+→	↓	↓	W	-1	↓	
+→	→	↓	W	→	3	
+→	→	↓	W	→	↑	
+↑	→	→	→	→	↑	
+1	-1	↑	W	-1	-1	
+
+
+Policy Iteration without terminal convergence takes 11 iterations:
+
+7.276171	10.343507	14.766503	18.225466	21.614036	24.725119	
+7.992132	10.856753	13.859379	W		24.110232	28.262171	
+8.105725	10.743658	13.321469	W		28.204698	31.970215	
+10.739155	13.624428	16.577871	W		27.654193	30.828051	
+13.255119	16.413998	19.934461	23.519424	26.895683	29.743629	
+13.880058	14.895228	18.851754	W		25.029742	27.522734	
+
+→	→	→	→	→	↓	
+→	→	↑	W	→	↓	
+→	↓	↓	W	→	→	
+→	→	↓	W	→	↑	
+→	→	→	→	→	↑	
+→	→	↑	W	→	↑	
+
+
+TD Q-learning:
+
+0.747218	-1.000000	1.216176	2.191466	1.410832	2.606495	
+2.131142	1.905871	2.210880	W		-1.000000	1.222981	
+2.174310	2.227027	2.296037	W		2.604550	3.000000	
+2.260308	2.272536	2.362762	W		2.723262	2.813284	
+1.953114	1.370965	2.405602	2.581541	1.943096	2.231810	
+1.000000	-1.000000	1.207541	W		-1.000000	-1.000000	
+
+←	-1	↑	↓	→	↓	
+→	→	↓	W	-1	→	
+↓	→	↓	W	↓	3	
+→	→	↓	W	→	↑	
+→	↑	→	→	↑	↑	
+1	-1	↓	W	-1	-1	
+
+
+
+No pizza, No ingredients:
+W W W W W W W W W W W W W W W 
+W → → → → → ↓ ↓ ↓ ↓ ← ↓ ← ↓ W 
+W ← → → → ↓ ← → ↓ ↓ ← ← ← ← W 
+W → ↑ ↑ W → ↓ ↓ → ↓ W ↑ ← ↑ W 
+W W W W W ↓ → ↓ → ↓ W W W W W 
+W ↓ ↓ ↓ → → → → → ↓ W ↓ ↓ ↓ W 
+W → ↓ → → ↑ ↓ ↓ ↓ → → → ← ← W 
+W → → ↑ → → → → → → → ↑ ↑ ← W 
+W W W W W W W W W W W W W W W 
+
+No pizza, Yes ingredients:
+W W W W W W W W W W W W W W W 
+W → → → → → → → → ↑ ← ← ← ← W 
+W ↑ → → → → → → ↑ ↑ ← ← ← → W 
+W → → ↑ W → ↑ → → ↑ W ↑ ↑ ↑ W 
+W W W W W → ↑ ↑ ← ↑ W W W W W 
+W → ↓ → → → → → → ↑ W ↓ ← ↓ W 
+W → → → ↑ ↑ ↑ ↑ ↑ ↑ ← ← ← ← W 
+W ↑ ↑ → ↑ ↑ → ↑ → ↑ ↑ ← ← ← W 
+W W W W W W W W W W W W W W W 
+
+Yes pizza, No ingredients:
+W W W W W W W W W W W W W W W 
+W ↓ ↓ ← ← ← ← → → → → ↓ ↓ ↓ W 
+W → → ← ← ↑ ← ↓ → → → ↓ ← ← W 
+W → ↑ ← W ↑ → → → ↑ W → ↑ ← W 
+W W W W W → ↑ ↑ → ↑ W W W W W 
+W ↓ ↓ → → → ↑ ↑ → ↑ W ↓ ↓ ↑ W 
+W → → ← ↑ → ↑ ↑ ← → ← ← ← ← W 
+W ↑ → ↑ ↑ ↑ ↑ ↑ → ↑ ↑ ↑ ← ← W 
+W W W W W W W W W W W W W W W 
+
+Yes pizza, Yes ingredients:
+W W W W W W W W W W W W W W W 
+W ↑ ← ↓ ↓ ↓ ← ↓ ↓ ↓ → ↓ ↓ → W 
+W → → ← ← ← → → → → → → ← ← W 
+W ↑ ↑ ↑ W ↑ ← ↑ → ↑ W ↑ ↑ → W 
+W W W W W ↑ ← → → ↑ W W W W W 
+W → ↓ → → ↑ ↑ ↑ ↑ ↑ W ↓ ← ← W 
+W → → ↑ ↑ ↑ ↑ → → ↑ ← ← ← ← W 
+W → ↑ ↑ ↑ ← ← → → ↑ ↑ ← ↑ ← W 
+W W W W W W W W W W W W W W W 
+
+
+No pizza, No ingredients:
+W W W W W W W W W W W W W W W 
+W R R R R R D D L D D L L L W 
+W R U R R R R R D D L L L L W 
+W U U U W D D R D D W U U U W 
+W W W W W D D U D D W W W W W 
+W R D R R R R R R D W D D D W 
+W R D R U U R R U R D R U L W 
+W R R R R R U L U L R R U U W 
+W W W W W W W W W W W W W W W 
+
+No pizza, Yes ingredients:
+W W W W W W W W W W W W W W W 
+W D D R R R R R R R L L U D W 
+W R R R R R U U R U L L L L W 
+W R U R W U U R U U W U U U W 
+W W W W W R R R U U W W W W W 
+W R R R R D R R U U W D L L W 
+W R U R R D U R U U L L L L W 
+W R R R R R R U L L L L L L W 
+W W W W W W W W W W W W W W W 
+
+Yes pizza, No ingredients:
+W W W W W W W W W W W W W W W 
+W D R D L D L R D D R D D D W 
+W L R L L L L R R R R R U L W 
+W R U L W U R R R U W U U L W 
+W W W W W U U R U U W W W W W 
+W U R R R U R U U L W D L L W 
+W U U R R R U R U L L L D U W 
+W R R R R U U R U U L L L L W 
+W W W W W W W W W W W W W W W 
+
+Yes pizza, Yes ingredients:
+W W W W W W W W W W W W W W W 
+W U D D D U R R R R R R D L W 
+W R R D L L U U U R R R L L W 
+W R U L W U R U R U W U U U W 
+W W W W W U R U R U W W W W W 
+W R R R R U U R U L W D D L W 
+W U R U U U U R R U L L L U W 
+W L L U U R R R R U L U L L W 
+W W W W W W W W W W W W W W W

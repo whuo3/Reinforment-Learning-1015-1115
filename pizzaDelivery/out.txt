@@ -1,0 +1,47 @@
+
+TD Q-learning:
+
+No pizza, No ingredients:
+W	W	W	W	W	W	W	W	W	W	W	W	W	W	W	
+W	R	R	D	D	D	D	D	R	D	L	D	D	D	W	
+W	L	U	R	R	D	D	D	L	D	L	L	L	L	W	
+W	U	D	R	W	D	D	D	D	D	W	U	L	L	W	
+W	W	W	W	W	D	D	R	D	D	W	W	W	W	W	
+W	D	D	L	L	L	D	D	D	D	W	R	D	D	W	
+W	R	R	U	L	L	R	R	R	R	R	D	D	L	W	
+W	U	U	L	L	L	R	R	R	U	R	R	U	U	W	
+W	W	W	W	W	W	W	W	W	W	W	W	W	W	W	
+
+No pizza, Yes ingredients:
+W	W	W	W	W	W	W	W	W	W	W	W	W	W	W	
+W	R	R	R	R	R	R	R	R	R	D	L	L	L	W	
+W	R	R	U	R	R	R	U	R	U	L	U	U	L	W	
+W	R	R	U	W	U	U	U	R	U	W	U	U	R	W	
+W	W	W	W	W	R	R	U	L	U	W	W	W	W	W	
+W	D	R	R	D	R	R	U	U	U	W	R	D	L	W	
+W	R	D	R	R	R	U	R	R	U	L	L	D	D	W	
+W	R	R	R	U	U	U	R	U	L	U	L	L	L	W	
+W	W	W	W	W	W	W	W	W	W	W	W	W	W	W	
+
+Yes pizza, No ingredients:
+W	W	W	W	W	W	W	W	W	W	W	W	W	W	W	
+W	R	R	L	R	R	R	D	R	D	R	D	D	D	W	
+W	R	R	L	R	U	U	D	D	R	R	R	L	L	W	
+W	U	U	U	W	U	D	R	R	U	W	U	U	U	W	
+W	W	W	W	W	U	R	D	U	U	W	W	W	W	W	
+W	R	U	R	R	R	R	R	U	L	W	D	L	U	W	
+W	U	R	L	R	U	U	R	U	U	L	L	L	L	W	
+W	R	R	R	U	R	U	R	U	U	L	L	L	L	W	
+W	W	W	W	W	W	W	W	W	W	W	W	W	W	W	
+
+Yes pizza, Yes ingredients:
+W	W	W	W	W	W	W	W	W	W	W	W	W	W	W	
+W	R	D	L	L	L	L	R	D	D	D	D	D	D	W	
+W	R	R	L	L	L	L	R	R	R	R	R	U	L	W	
+W	U	U	U	W	U	U	R	R	U	W	U	U	U	W	
+W	W	W	W	W	U	R	R	U	L	W	W	W	W	W	
+W	R	R	R	R	U	U	U	R	U	W	D	L	U	W	
+W	R	U	R	U	L	L	U	L	L	L	L	D	L	W	
+W	U	R	R	R	D	U	U	L	U	L	L	L	R	W	
+W	W	W	W	W	W	W	W	W	W	W	W	W	W	W	
+

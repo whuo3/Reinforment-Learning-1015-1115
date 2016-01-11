@@ -1,0 +1,56 @@
+
+TD Q-learning:
+
+No pizza, No ingredients:
+W	W	W	W	W	W	W	W	W	W	W	W	W	W	W
+W	→	→	→	↓	↓	↓	↓	←	↓	←	←	←	←	W
+W	→	→	↑	→	↓	↓	↓	↓	←	←	↑	↑	←	W
+W	↑	↑	↑	W	↓	↓	↓	←	←	W	↑	↑	↑	W
+W	W	W	W	W	↓	→	←	←	↑	W	W	W	W	W
+W	→	↓	←	←	←	←	↑	↑	↓	W	→	↓	→	W
+W	→	→	←	↑	←	↓	↓	↓	←	→	↑	←	←	W
+W	↑	↑	←	←	←	←	←	←	←	→	→	→	↑	W
+W	W	W	W	W	W	W	W	W	W	W	W	W	W	W
+
+No pizza, Yes ingredients:
+W	W	W	W	W	W	W	W	W	W	W	W	W	W	W
+W	↓	→	→	→	↓	→	→	↓	→	←	←	←	←	W
+W	→	↓	→	→	→	↑	→	→	↑	↑	↑	←	←	W
+W	→	→	↑	W	↑	→	↓	→	↑	W	↑	↑	→	W
+W	W	W	W	W	→	→	→	↑	↑	W	W	W	W	W
+W	→	→	→	→	→	↑	↑	↑	↑	W	↓	↓	←	W
+W	→	→	→	→	↓	↓	↑	↑	←	←	←	↑	→	W
+W	→	↑	→	→	→	→	↑	↑	←	←	←	←	↓	W
+W	W	W	W	W	W	W	W	W	W	W	W	W	W	W
+
+Yes pizza, No ingredients:
+W	W	W	W	W	W	W	W	W	W	W	W	W	W	W
+W	→	↓	←	←	←	←	←	→	→	→	→	↓	↓	W
+W	→	→	←	←	←	←	↑	↑	→	→	→	↑	←	W
+W	→	↑	↑	W	↑	↑	→	→	↑	W	↑	↑	←	W
+W	W	W	W	W	↑	→	↑	←	↑	W	W	W	W	W
+W	←	←	→	→	→	↑	↑	↑	↑	W	↓	→	←	W
+W	→	↑	↑	↑	↑	↑	↑	↑	↑	←	←	←	→	W
+W	→	↓	←	↓	→	→	↑	←	↑	↑	↑	↑	←	W
+W	W	W	W	W	W	W	W	W	W	W	W	W	W	W
+
+Yes pizza, Yes ingredients:
+W	W	W	W	W	W	W	W	W	W	W	W	W	W	W
+W	↑	→	↑	←	←	→	→	→	→	→	→	↓	←	W
+W	↑	↑	↑	↓	←	↑	→	↑	↑	→	→	←	↓	W
+W	→	↓	↑	W	→	↑	↑	←	↑	W	→	↑	↑	W
+W	W	W	W	W	→	→	↑	←	←	W	W	W	W	W
+W	→	→	→	→	↑	↑	↑	↑	←	W	↓	↓	↓	W
+W	→	↑	↓	→	→	↑	↑	↑	←	←	←	←	←	W
+W	→	↑	→	→	→	→	↑	←	←	←	←	↑	↑	W
+W	W	W	W	W	W	W	W	W	W	W	W	W	W	W
+
+W	W	W	W	W	W	W	W	W	W	W	W	W	W	W
+W	 	 	 	 	 	 	 	 	 	 	 	 	 	W
+W	 	 	 	 	 	 	 	 	 	 	 	 	 	W
+W	 	 	 	W	 	 	 	 	 	W	 	 	 	W
+W	W	W	W	W	 	 	H	 	 	W	W	W	W	W
+W	 	 	 	 	 	 	 	 	 	W	 	 	 	W
+W	 	 	 	 	 	 	 	 	 	 	 	 	 	W
+W	 	 	 	 	 	 	 	 	 	 	 	 	 	W
+W	W	W	W	W	W	W	W	W	W	W	W	W	W	W
